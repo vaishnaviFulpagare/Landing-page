@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Lamding page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <div class="header">
+        <nav class="navbar">
+        <div class="logo">logo</div>
+         <a class="toggle-btn" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </a>
+        <div class="logo-menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABIUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CAREER</a></li>
+        </ul>
+        </div>
+        </nav>
+<div class="content">
+    <h1>Hello Pune </h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, molestias qui? Qui, sed. Similique nostrum deserunt minus blanditiis non nihil magnam doloribus rem. Nesciunt consequatur veritatis alias, quidem quod hic.</p>
+    <div class="button"><a href="#">join now</a></div>
+</div>
+    </div>
+    <script type="text/javascript">
+      const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+      const logomenu =document.getElementsByClassName("logo-menu")[0]
+      toggleBtn.addEventListener("click",()=>{
+        logomenu.classList.toggle("active")
+      })
+
+    </script>
+</body>
+</html>

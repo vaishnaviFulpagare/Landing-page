@@ -1,0 +1,150 @@
+@import url("https://fonts.google.com/specimen/Roboto");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    color: aliceblue;
+    padding: 10px 60px;
+}
+.navbar .logo{
+font-weight: 500;
+font-size: 35px;
+text-transform: uppercase;
+margin: 10px 0px;
+}
+.logo-menu ul{
+display: flex;
+text-align: center;
+justify-content:center;
+}
+.logo-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+.logo-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color :white;
+}
+.logo-menu ul li a:hover{
+    background-color: cadetblue;
+    transition: 0.5s ease;
+}
+.toggle-btn{
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    display:none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 32px;
+}
+.toggle-btn .bar{
+    height: 4px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: aliceblue;
+    padding: 0px 60px;
+}
+.content h1{
+    color:#fff;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.content p{
+    color: #b3b1b1;
+    font-size: 19px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.content .button{
+    margin-top: 25px;
+}
+.content .button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 14px 15px;
+    letter-spacing: 1.5px;
+}
+.content .button a:hover{
+    background-color: aqua;
+    transition: 0.5s ease;
+}
+@media screen and (max-width:768px){
+    .toggle-btn{
+        display: flex;
+        z-index: 2;
+    }
+    .logo-menu ul{
+        width: 100%;
+        background-color: #a1f590;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .logo-menu{
+        display: flex;
+        width: 100%;
+    }
+    .logo-menu ul li{
+       margin: 10px 0px;
+    }
+    .logo-menu ul li a{
+        font-size: 19px;
+    }
+    .navbar .logo{
+        font-size: 29px;
+    }
+    .content h1{
+       font-size: 40px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content .button a{
+        font-size: 17px;
+        padding: 9px 15px;
+    }
+    .logo-menu .active{
+        display: flex;
+    }
+}
